@@ -15,7 +15,7 @@ async def NibiX_boot():
     await bot.start()
     await call_py.start()
     await idle()
-    print(f"ɢᴏᴏᴅʙʏᴇ!\nStopping @{BOT_USERNAME}")
+    print(f"ɢᴏᴏᴅʙʏᴇ ʙʜᴀᴋ ᴍᴀᴅʜᴀʟʜᴏᴅ!\nStopping @{BOT_USERNAME}")
     await bot.stop()
 
 

@@ -51,26 +51,26 @@ async def start(client: Nirjon, message: Message):
     )
 
 
-@Nirjon.on_message(filters.command(["start", "help"]) & ~filters.group)
+@Nirjon.on_message(filters.command(["start", "help", "ajeet", "iloveyou"]) & ~filters.group)
 async def start(_, message: Message):
     await message.reply_text(
         f"""ʜᴇʏ {message.from_user.mention()}, 
        
   ᴍʏ ɴᴀᴍᴇ ɪs {BOT_NAME}.
-๏ ᴀ ғᴀsᴛ ᴀɴᴅ ᴩᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴩʟᴀʏᴇʀ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇs.
-๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs..
+๏ ᴀ ғᴀsᴛ ᴀɴᴅ ᴩᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴩʟᴀʏᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴍᴀɴʏ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇs.
+๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴏᴡɴᴇᴅ ʙʏ @PAPA_BOL_SAKTEHO .. 
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ",
+                        text="🥵ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ🥵",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     ),
                 ],
                 [
                     InlineKeyboardButton(text="❄ ʜᴇʟᴩ ❄", callback_data="cbbasic"),
-                    InlineKeyboardButton(text="🥀 ᴏᴡɴᴇʀ 🥀", user_id=F_OWNER),
+                    InlineKeyboardButton(text="🥀ʙᴏᴛ ᴋᴇ ᴘᴀᴘᴀ🥀", user_id=F_OWNER),
                 ],
                 [
                     InlineKeyboardButton(
@@ -83,7 +83,7 @@ async def start(_, message: Message):
                 [
                     InlineKeyboardButton(
                         text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁",
-                        url="https://github.com/NirjonX69/NibiMusic",
+                        url="https://telegra.ph/file/9e2e4ef384a59ae92d4ea.mp4",
                     )
                 ],
             ]
@@ -92,7 +92,7 @@ async def start(_, message: Message):
     )
 
 
-@Nirjon.on_message(filters.command(["repo", "source"]))
+@Nirjon.on_message(filters.command(["repo", "source", "ajeetpapa", "pampabol"]))
 async def help(client: Nirjon, message: Message):
     await message.reply_photo(
         photo=f"https://te.legra.ph/file/56557bd94afbe895ae483.jpg",
@@ -101,7 +101,7 @@ async def help(client: Nirjon, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        " ʀᴇᴘᴏ ⚒️", url=f"https://github.com/NirjonX69/NibiMusic"
+                        " ʀᴇᴘᴏ ⚒️", url=f"https://github.com/Ajsites2324/NibiMusic"
                     )
                 ]
             ]

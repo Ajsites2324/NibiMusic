@@ -47,7 +47,7 @@ useer = "NaN"
 ACTV_CALLS = []
 
 
-@Nirjon.on_message(command(["play", f"play@{BOT_USERNAME}", "ajplay", f"ajplay@{BOT_USERNAME"]) & other_filters)
+@Nirjon.on_message(command(["play", f"play@{BOT_USERNAME}"]) & other_filters)
 async def play(c: Nirjon, m: Message):
     await m.delete()
     replied = m.reply_to_message

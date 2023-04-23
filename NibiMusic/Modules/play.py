@@ -47,7 +47,7 @@ useer = "NaN"
 ACTV_CALLS = []
 
 
-@Nirjon.on_message(command(["play", f"play@{BOT_USERNAME}"]) & other_filters)
+@Nirjon.on_message(command(["play", f"play@{BOT_USERNAME}", "ajplay", f"ajplay@{BOT_USERNAME"]) & other_filters)
 async def play(c: Nirjon, m: Message):
     await m.delete()
     replied = m.reply_to_message
@@ -107,7 +107,7 @@ async def play(c: Nirjon, m: Message):
                 )
     if replied:
         if replied.audio or replied.voice:
-            suhu = await replied.reply("📥 **ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀᴜᴅɪᴏ...**")
+            suhu = await replied.reply("📥 **ʀᴜᴋᴀ ᴊᴀʀᴀ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀᴜᴅɪᴏ...**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -144,7 +144,7 @@ async def play(c: Nirjon, m: Message):
                     )
                     await m.reply_photo(
                         photo=f"{IMG_2}",
-                        caption=f"🏷 **ɴᴀᴍᴇ:** [{songname}]({link})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `ᴘʟᴀʏɪɴɢ`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏ:** {requester}\n📹 **sᴛʀᴇᴀᴍ ᴛʏᴘᴇ:** `ᴍᴜsɪᴄ`",
+                        caption=f"🏷 **ɴᴀᴍᴇ:** [{songname}]({link})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `ᴘʟᴀʏɪɴɢ`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏ:** {requester}\n📹 **sᴛʀᴇᴀᴍ ᴛʏᴘᴇ:** `ᴀᴊ ᴍᴜsɪᴄ`",
                         reply_markup=InlineKeyboardMarkup(buttons),
                     )
                 except Exception as e:
@@ -160,7 +160,7 @@ async def play(c: Nirjon, m: Message):
                     [
                         [
                             InlineKeyboardButton(
-                                "• sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/BlackWorldMF"
+                                "• sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Ajeet_bots"
                             ),
                             InlineKeyboardButton("• ᴄʟᴏsᴇ", callback_data="cls"),
                         ]
@@ -168,7 +168,7 @@ async def play(c: Nirjon, m: Message):
                 ),
             )
         else:
-            suhu = await m.reply_text(f"**ɴɪʙɪ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ**\n\n100% ▓▓▓▓▓▓▓▓▓▓▓▓ 00%")
+            suhu = await m.reply_text(f"**ᴀʀꜱʜɪᴀ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ**\n\n100% ▓▓▓▓▓▓▓▓▓▓▓▓ 00%")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -183,12 +183,12 @@ async def play(c: Nirjon, m: Message):
                 gcname = m.chat.title
                 videoid = search[4]
                 dlurl = f"https://www.youtubepp.com/watch?v={videoid}"
-                info = f"https://t.me/NibiMusicBot?start=info_{videoid}"
+                info = f"https://t.me/ArshiaMusicroBot?start=info_{videoid}"
                 keyboard = stream_markup(user_id, dlurl)
                 playimg = await play_thumb(videoid)
                 queueimg = await queue_thumb(videoid)
                 await suhu.edit(
-                    f"**ɴɪʙɪ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ**\n\n**ᴛɪᴛʟᴇ**: {title[:22]}\n\n100% ▓▓▓▓▓▓▓▓▓▓▓▓0%\n\n**ᴛɪᴍᴇ ᴛᴀᴋᴇɴ**: 00:00 sᴇᴄᴏɴᴅs\n\n**ᴄᴏɴᴠᴇʀᴛɪɴɢ ᴀᴜᴅɪᴏ[ғғᴍᴘᴇɢ ᴘʀᴏᴄᴇss]**"
+                    f"**ᴀᴊᴇᴇᴛ ᴍᴜꜱɪᴄ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ**\n\n**ᴛɪᴛʟᴇ**: {title[:22]}\n\n100% ▓▓▓▓▓▓▓▓▓▓▓▓0%\n\n**ᴛɪᴍᴇ ᴛᴀᴋᴇɴ**: 00:00 sᴇᴄᴏɴᴅs\n\n**ᴄᴏɴᴠᴇʀᴛɪɴɢ ᴀᴜᴅɪᴏ[ғғᴍᴘᴇɢ ᴘʀᴏᴄᴇss]**"
                 )
                 format = "bestaudio"
                 abhi, ytlink = await ytdl(format, url)
@@ -209,7 +209,7 @@ async def play(c: Nirjon, m: Message):
                     else:
                         try:
                             await suhu.edit(
-                                f"**ɴɪʙɪ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ**\n\n**ᴛɪᴛʟᴇ**: {title[:22]}\n\n0% ████████████100%\n\n**ᴛɪᴍᴇ ᴛᴀᴋᴇɴ**: 00:00 sᴇᴄᴏɴᴅs\n\n**ᴄᴏɴᴠᴇʀᴛɪɴɢ ᴀᴜᴅɪᴏ[ғғᴍᴘᴇɢ ᴘʀᴏᴄᴇss]**"
+                                f"**ᴀᴊᴇᴇᴛ ᴍᴜꜱɪᴄ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ**\n\n**ᴛɪᴛʟᴇ**: {title[:22]}\n\n0% ████████████100%\n\n**ᴛɪᴍᴇ ᴛᴀᴋᴇɴ**: 00:00 sᴇᴄᴏɴᴅs\n\n**ᴄᴏɴᴠᴇʀᴛɪɴɢ ᴀᴜᴅɪᴏ[ғғᴍᴘᴇɢ ᴘʀᴏᴄᴇss]**"
                             )
                             await call_py.join_group_call(
                                 chat_id,
@@ -227,7 +227,7 @@ async def play(c: Nirjon, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=playimg,
-                                caption=f"📡 sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ ᴀᴜᴅɪᴏ 💡\n\n👤ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:{requester}\nɪɴғᴏʀᴍᴀᴛɪᴏɴ [ʜᴇʀᴇ]({info})",
+                                caption=f"📡 sᴛᴀʀᴛᴇᴅ sᴛʀᴇᴀᴍɪɴɢ ᴀᴜᴅɪᴏ ᴍᴏᴊ ᴍᴀᴀʀ ʙᴇᴛᴇ💡\n\n👤ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:{requester}\nɪɴғᴏʀᴍᴀᴛɪᴏɴ [ʜᴇʀᴇ]({info})",
                                 reply_markup=InlineKeyboardMarkup(keyboard),
                             )
                         except Exception as ep:

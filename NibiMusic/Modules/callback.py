@@ -89,14 +89,14 @@ async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""ʜᴇʏ ,ᴍʏ ɴᴀᴍᴇ ɪs {BOT_NAME}.
 
-๏ ᴀ ғᴀsᴛ ᴀɴᴅ ᴩᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴩʟᴀʏᴇʀ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇs.
+๏ ᴀ ғᴀsᴛ ᴀɴᴅ ᴩᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴩʟᴀʏᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴍᴀɴʏ ᴀᴡᴇsᴏᴍᴇ ғᴇᴀᴛᴜʀᴇs.
 ๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs.
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ",
+                        text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     ),
                 ],
@@ -114,8 +114,8 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁",
-                        url="https://github.com/NirjonX69/NibiMusic",
+                        text="☁ ꜰᴇᴇʟɪɴɢꜱ ☁",
+                        url="https://t.me/about_ajeet",
                     )
                 ],
             ]
